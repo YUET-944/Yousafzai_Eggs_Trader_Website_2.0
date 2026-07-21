@@ -23,7 +23,7 @@ export default function EggTradersPageBanner({ title, subtitle }) {
 
   return (
     <div ref={ref}>
-      <section className="et-page-hero">
+      <header className="et-page-hero">
         <div className="et-page-hero-bg" />
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="et-page-hero-content et-banner-reveal">
@@ -38,7 +38,7 @@ export default function EggTradersPageBanner({ title, subtitle }) {
             {subtitle && <p className="et-page-hero-sub">{subtitle}</p>}
           </div>
         </div>
-      </section>
+      </header>
       <style>{`
         .et-page-hero { position: relative; min-height: 280px; display: flex; align-items: center; padding: 140px 0 60px; overflow: hidden; }
         .et-page-hero-bg { position: absolute; inset: 0; background: radial-gradient(120% 100% at 80% 0%, #059669 0%, #0D6B3D 45%, #064E3B 100%); }

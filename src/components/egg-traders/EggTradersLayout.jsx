@@ -52,15 +52,15 @@ export default function EggTradersLayout({ noFooter }) {
         .et-page-enter { animation: etFadeIn .6s cubic-bezier(.22,1,.36,1) both; }
         @keyframes etFadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
         ::selection { background: #FDE68A; color: #064E3B; }
-        section { padding: 120px 0; position: relative; }
+        section { padding: 120px 0; position: relative; scroll-margin-top: 80px; }
         .section-alt { background: #FFFFFF; }
         .container { padding-left: 48px !important; padding-right: 32px; }
-        .tag-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #D97706; margin-bottom: 18px; }
-        .tag-eyebrow::before { content: ''; width: 22px; height: 1.6px; background: #D97706; }
-        .sec-head { max-width: 680px; margin-bottom: 56px; background: #FFFFFF; border: 1px solid #EEF1F5; border-radius: 24px; padding: 32px 36px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+        .tag-eyebrow { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #A7F3D0; margin-bottom: 18px; }
+        .tag-eyebrow::before { content: ''; width: 22px; height: 1.6px; background: #A7F3D0; }
+        .sec-head { text-align: center; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 56px; background: radial-gradient(120% 100% at 80% 0%, #059669 0%, #0D6B3D 45%, #064E3B 100%); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 32px 36px; box-shadow: 0 14px 36px rgba(0,0,0,0.15); }
         .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
-        .sec-title { font-family: 'Space Grotesk',sans-serif; font-weight: 600; font-size: clamp(1.9rem,3vw,2.7rem); color: #0D6B3D; line-height: 1.18; letter-spacing: -0.01em; }
-        .sec-sub { font-size: 15.5px; color: #707888; margin-top: 16px; line-height: 1.75; }
+        .sec-title { font-family: 'Space Grotesk',sans-serif; font-weight: 600; font-size: clamp(1.9rem,3vw,2.7rem); color: #FFFFFF; line-height: 1.18; letter-spacing: -0.01em; }
+        .sec-sub { font-size: 15.5px; color: rgba(255,255,255,0.8); margin-top: 16px; line-height: 1.75; }
         .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1); }
         .reveal.in { opacity: 1; transform: translateY(0); }
         .reveal-stagger > * { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1); }

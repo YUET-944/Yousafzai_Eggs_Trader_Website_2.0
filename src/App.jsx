@@ -31,7 +31,7 @@ import { useCMSStore } from './store/useCMSStore';
 function AdminDashboard() {
   return (
     <div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 32 }}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         {[
           { label: 'Sections', value: '14', icon: FileText },
           { label: 'CMS Items', value: '50+', icon: Package },

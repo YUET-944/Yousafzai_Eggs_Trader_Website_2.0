@@ -58,8 +58,8 @@ export default function ProcessSection() {
       <style>{`
         .process-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
         .proc-card { background: #FFFFFF; border: 1px solid #EEF1F5; border-radius: 24px; padding: 30px; position: relative; }
-        .proc-num { position: absolute; top: 24px; right: 26px; font-family: 'Space Grotesk',sans-serif; font-size: 32px; font-weight: 700; color: #EEF1F5; }
-        .proc-icon { width: 48px; height: 48px; border-radius: 13px; background: #F5F7FA; display: flex; align-items: center; justify-content: center; color: #0B2545; margin-bottom: 20px; }
+        .proc-num { position: absolute; top: 24px; right: 26px; font-family: 'Space Grotesk',sans-serif; font-size: 32px; font-weight: 700; color: #F1E4C3; -webkit-text-stroke: 1px #C8A24A; }
+        .proc-icon { width: 48px; height: 48px; border-radius: 13px; background: #F1E4C3; display: flex; align-items: center; justify-content: center; color: #0B2545; margin-bottom: 20px; }
         .proc-title { font-weight: 700; font-size: 15px; color: #0B2545; margin-bottom: 10px; }
         .proc-body { font-size: 13px; color: #707888; line-height: 1.65; }
         @media (max-width: 1080px) { .process-grid { grid-template-columns: 1fr 1fr; } }

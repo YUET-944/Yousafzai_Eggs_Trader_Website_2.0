@@ -102,8 +102,8 @@ export default function ProductsSection() {
         .p-tag.gold { background: #F1E4C3; color: #9C7B2E; }
         .spec-table-wrap { margin-top: 56px; border-radius: 24px; overflow: hidden; border: 1px solid #EEF1F5; box-shadow: 0 2px 10px rgba(11,37,69,0.06); }
         table { width: 100%; border-collapse: collapse; background: #FFFFFF; }
-        thead th { background: #0B2545; color: #FFFFFF; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 16px 20px; text-align: left; }
-        tbody td { padding: 16px 20px; font-size: 13.5px; color: #444C5C; border-bottom: 1px solid #EEF1F5; }
+        thead th { background: #0B2545; color: #FFFFFF; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 16px 20px; text-align: center; }
+        tbody td { padding: 16px 20px; font-size: 13.5px; color: #444C5C; border-bottom: 1px solid #EEF1F5; text-align: center; }
         tbody tr:last-child td { border-bottom: none; }
         tbody tr:hover td { background: #F5F7FA; }
         .status-pill { font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; display: inline-block; }

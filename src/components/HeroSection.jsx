@@ -232,13 +232,13 @@ export default function HeroSection() {
         }
         @keyframes spin { to { transform: rotate(360deg); } }
 
-        .stat-strip { background: #FFFFFF; border-top: 1px solid #EEF1F5; position: relative; z-index: 3; margin-top: -1px; }
+        .stat-strip { background: linear-gradient(135deg,#071A30,#0B2545); border-top: 1px solid rgba(255,255,255,0.06); position: relative; z-index: 3; margin-top: -1px; }
         .stat-strip .container { display: grid; grid-template-columns: repeat(4,1fr); padding: 46px 32px; }
-        .stat-strip .stat { text-align: center; border-right: 1px solid #EEF1F5; padding: 0 18px; }
+        .stat-strip .stat { text-align: center; border-right: 1px solid rgba(255,255,255,0.1); padding: 0 18px; }
         .stat-strip .stat:last-child { border-right: none; }
-        .stat-num { font-family: 'Space Grotesk',sans-serif; font-size: clamp(1.8rem,2.6vw,2.6rem); font-weight: 700; color: #0B2545; display: flex; justify-content: center; align-items: baseline; gap: 3px; }
+        .stat-num { font-family: 'Space Grotesk',sans-serif; font-size: clamp(1.8rem,2.6vw,2.6rem); font-weight: 700; color: #FFFFFF; display: flex; justify-content: center; align-items: baseline; gap: 3px; }
 
-        .stat-cap { font-size: 12.5px; color: #707888; margin-top: 6px; }
+        .stat-cap { font-size: 12.5px; color: rgba(255,255,255,0.7); margin-top: 6px; }
 
         .btn {
           display: inline-flex; align-items: center; justify-content: center; gap: 8px;

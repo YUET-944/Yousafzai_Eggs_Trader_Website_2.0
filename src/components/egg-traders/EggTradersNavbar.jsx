@@ -36,7 +36,7 @@ export default function EggTradersNavbar({ scrolled, mobileOpen, setMobileOpen }
           transition: 'all 0.4s cubic-bezier(.22,1,.36,1)',
         }}
       >
-        <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 32px 0 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 0' }}>
           <Link to="/egg-traders" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
             <div style={{ background: 'transparent', borderRadius: 10, padding: '4px 6px', display: 'flex', alignItems: 'center', transition: 'background 0.4s' }}>
               <img src={logo} alt="Yousafzai EGRO" style={{ height: 42, width: 'auto', flexShrink: 0, display: 'block' }} />

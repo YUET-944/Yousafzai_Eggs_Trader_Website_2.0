@@ -23,7 +23,7 @@ export default function PageBanner({ title, subtitle }) {
 
   return (
     <div ref={ref}>
-      <section className="page-hero">
+      <header className="page-hero">
         <div className="page-hero-bg" />
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="page-hero-content reveal-up">
@@ -38,7 +38,7 @@ export default function PageBanner({ title, subtitle }) {
             {subtitle && <p className="page-hero-sub">{subtitle}</p>}
           </div>
         </div>
-      </section>
+      </header>
       <style>{`
         .page-hero {
           position: relative;
