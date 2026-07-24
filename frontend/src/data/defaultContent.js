@@ -45,6 +45,10 @@ export const defaultContent = {
       { initials: 'NR', name: 'Nadia Rehman', role: 'Head of Partnerships', bio: 'Manages a 280+ partner network across all partner tiers, driving retention and supply-chain growth.' },
       { initials: 'BH', name: 'Bilal Hussain', role: 'Logistics Director', bio: 'Oversees the 35-vehicle cold-chain fleet and last-mile delivery across 28 operational cities in 3 provinces.' },
     ],
+    leadership: [
+      { name: 'Yousafzai', role: 'Chairman', bio: 'Provides strategic vision and oversight, ensuring the company\'s long-term growth and adherence to core values.', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop' },
+      { name: 'John Doe', role: 'Chief Executive Officer (CEO)', bio: 'Leads executive management and day-to-day operations across all business units and international markets.', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop' }
+    ]
   },
   overview: {
     rows: [

@@ -65,6 +65,24 @@ export default function AboutSection() {
             ))}
           </div>
 
+          <div className="leadership-section reveal">
+            <h3 className="section-heading">Our Leadership</h3>
+            <div className="leadership-grid">
+              {(about.leadership || []).map((leader, i) => (
+                <div key={i} className="leader-card">
+                  <div className="leader-image">
+                    <img src={leader.image} alt={leader.name} />
+                  </div>
+                  <div className="leader-info">
+                    <div className="leader-name">{leader.name}</div>
+                    <div className="leader-role">{leader.role}</div>
+                    <div className="leader-bio">{leader.bio}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="team-grid reveal-stagger">
             {about.team.map((member, i) => (
               <div key={i} className="team-card">
@@ -122,6 +140,20 @@ export default function AboutSection() {
         .v-body { font-size: 13.5px; color: #707888; line-height: 1.65; }
 
         .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 24px; }
+        
+        .leadership-section { margin-top: 80px; }
+        .section-heading { font-size: 24px; font-weight: 700; color: #0B2545; margin-bottom: 32px; text-align: center; }
+        .leadership-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+        .leader-card { background: #FFFFFF; border: 1px solid #EEF1F5; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; transition: transform .35s ease, box-shadow .35s ease; box-shadow: 0 4px 12px rgba(11,37,69,0.03); }
+        .leader-card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px rgba(11,37,69,0.08); }
+        .leader-image { width: 100%; height: 260px; overflow: hidden; }
+        .leader-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+        .leader-card:hover .leader-image img { transform: scale(1.05); }
+        .leader-info { padding: 32px; }
+        .leader-name { font-weight: 700; font-size: 20px; color: #0B2545; margin-bottom: 4px; }
+        .leader-role { font-size: 13px; color: #9C7B2E; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: .04em; }
+        .leader-bio { font-size: 14px; color: #707888; line-height: 1.6; }
+
         .team-card { background: #F5F7FA; border-radius: 24px; padding: 32px 28px; transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s cubic-bezier(.22,1,.36,1); }
         .team-card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(11,37,69,0.10); background: #FFFFFF; }
         .team-avatar { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(145deg,#0B2545,#123A6B); display: flex; align-items: center; justify-content: center; color: #F1E4C3; margin-bottom: 18px; }
@@ -148,10 +180,10 @@ export default function AboutSection() {
           .team-card:nth-child(3), .value-card:nth-child(3) { grid-column: 1 / -1; justify-self: center; width: 50%; }
         }
         @media (max-width: 860px) {
-          .about-grid { grid-template-columns: 1fr; }
-          .overview-wrap, .value-grid, .team-grid { grid-template-columns: 1fr; }
-          section { padding: 80px 0; }
+          .value-grid, .team-grid, .leadership-grid { grid-template-columns: 1fr; }
           .team-card:nth-child(3), .value-card:nth-child(3) { width: 100%; }
+          .overview-wrap { grid-template-columns: 1fr; }
+          .about-grid { grid-template-columns: 1fr; }
         }
       `}</style>
     </div>
